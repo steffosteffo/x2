@@ -1,9 +1,7 @@
 {
-  "homepage":"https://steffosteffo.github.io/x2", 
+  "homepage": "https://steffosteffo.github.io/x2",
   "name": "invoice-app-frontend",
   "version": "0.1.0",
- 
-  
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -43,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "http-proxy-middleware": "^3.0.0",
     "webpack": "^5.91.0",
     "webpack-dev-server": "^5.0.4"
