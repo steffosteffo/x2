@@ -1,0 +1,180 @@
+/* EGNA DEFINIERADE START!!!!!*/
+/* EGNA DEFINIERADE START!!!!!*/
+/* EGNA DEFINIERADE START!!!!!*/
+/* EGNA DEFINIERADE START!!!!!*/
+
+
+/* För att få bort text box fält i Kund Detaljer */
+#nameInv {
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  box-shadow: none; /* Remove box-shadow */
+  font-size: 14px; /* Set font size */
+  font-weight: 300; /* Set font weight (lighter) */
+  padding: 0px; /* Add padding for spacing */
+  width: 300px; /* Set width of the input field */
+  /* Additional styles if needed */
+}
+
+
+/* Företag detaljer och Kund Detaljer vyn på fakturan */
+.dl-horizontal dt {
+  width: 520px; /* Adjust the width as needed */
+  float: left;
+  clear: left;
+  text-align: left;
+  padding-right: 10px; /* Add spacing between dt and dd */
+  overflow: nowrap  ; /* Hide any overflow text */
+  white-space: nowrap; /* Prevent wrapping of text */
+}
+
+/* Företag detaljer och Kund Detaljer vyn på fakturan */
+.dl-horizontal dd {
+  margin-left: 14px; /* Adjust to provide space after dt */
+  text-align: left;
+  overflow: hidden; /* Hide any overflow text */
+  white-space: normal ; /* Prevent wrapping of text DENNA RAPPAR steffo */
+  text-overflow: ellipsis; /* Show ellipsis for overflow text */
+}
+
+
+
+/*** 
+/* Style for the form container */
+.invoice-form {
+  display:inside ; /*flex*/
+  flex-direction: column;
+  align-items:center; /*center*/
+}
+
+/* Style for input fields */
+input[type="text"] {
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+  border-color: #007bff; /* Change border color on hover and focus */
+}
+
+/* Style for the button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+
+  background-color: #5ff432;
+
+ /*  background-color: #0056b3; Change background color on hover */
+}
+
+/***
+
+
+
+/* CSS styles for the 
+.table-condensed {
+  
+}
+table */
+
+/* CSS styles for the small column */
+.small-column {
+  width: 0px; 
+  color: fuchsia;
+
+}
+
+/* EGNA DEFINIERADE SLUT!!!!!*/
+/* EGNA DEFINIERADE SLUT!!!!!*/
+/* EGNA DEFINIERADE SLUT!!!!!*/
+/* EGNA DEFINIERADE SLUT!!!!!*/
+
+
+
+body {
+  background: #fff;
+  /* font-size:0.9em !important; ;    #999; #EEE*/
+}
+
+.invoice {
+  background:#fff;
+  width: 970px !important;
+  margin: 50px auto;
+}
+.invoice .invoice-header {
+  padding: 25px 25px 15px;
+}
+.invoice .invoice-header h1 {
+  margin: 0;
+}
+.invoice .invoice-header .media .media-body {
+  font-size: 0.9em;
+  margin: 0;
+}
+.invoice .invoice-body {
+  border-radius: 10px;
+  padding: 25px;
+  background: #FFF;
+}
+.invoice .invoice-footer {
+  padding: 15px;
+  font-size: 0.9em;
+  text-align: center;
+  color: #1f4bea;
+}
+
+.logo {
+  max-height: 70px;
+  border-radius: 10px;
+}
+
+.dl-horizontal {
+  margin: 0;
+}
+.dl-horizontal dt {
+  float: left;
+  width: 80px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dl-horizontal dd {
+  margin-left: 90px;
+}
+
+.rowamount {
+  padding-top: 15px !important;
+}
+
+.rowtotal {
+  font-size: 1.3em;
+}
+
+.colfix {
+  width: 12%;
+}
+
+.mono {
+  font-family: monospace;
+}
+
+.input {
+  width: 4%;
+  padding: 1px;
+  /*  border: 1px solid #ddd;*/
+  border-radius: 50px;
+}
