@@ -21,10 +21,10 @@ function EditCustomerForm() {
      
      //MED MONGO!!
      //const response = await axios.get('https://your-backend-url/api/customers');
-    // const response = await axios.get('https://Dev/invoice-app-frontend/src/invoice-app-backend/routes/customers.js');
+     const response = await axios.get('http://localhost:3000/api/customers');
        ///C:/Dev/invoice-app-frontend/src/invoice-app-backend/routes/customers.js
      // UTAN MONGO!!!
-      const response = await axios.get('/api/customers');
+     // const response = await axios.get('/api/customers');
      console.log('-------------------------response from fetchCustomers: =   ' + response)
       setCustomers(response.data);
       console.log('--DATA---------------------response.data from fetchCustomers: =   ' + response.data)
