@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
@@ -67,7 +67,7 @@ app.use('/api/invoices', require('./routes/invoices'));
 
 
 // Start the server
-app.listen(3000, () => {
+app.listen(5000, () => {
   console.log('Server running on port 3000');
 });
 ///NYTT ///////////////////////////////////SLUT
