@@ -39,9 +39,14 @@ app.listen(PORT, () => {
 
 
 
+
+
 // Allow requests from specific origin (e.g., GitHub Pages)
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://username.github.io'], // Update with your frontend URLs
+
+
+
+  origin: ['http://localhost:3000', 'https://steffosteffo.github.io'], // Update with your frontend URLs
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
