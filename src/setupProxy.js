@@ -7,7 +7,7 @@ module.exports = function(app) {
   app.use(
     '/api', // Specify the endpoint you want to proxy
     createProxyMiddleware({
-      target: 'http://localhost:5000', // Specify the target host (your backend server)
+      target: 'http://localhost:3000', // Specify the target host (your backend server)
       changeOrigin: true, // Add this option to handle the target host's origin
     })
   );
