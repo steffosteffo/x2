@@ -9,7 +9,6 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 // OLD START///////////////////////
-
 /*
 app.use(cors());
 
@@ -42,8 +41,8 @@ app.listen(PORT, () => {
 
 // Allow requests from specific origin (e.g., GitHub Pages)
 app.use(cors({
-  origin: 'https://steffosteffo.github.io',
-  methods: ['GET', 'POST'],
+  origin: ['http://localhost:3000', 'https://username.github.io'], // Update with your frontend URLs
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
@@ -56,7 +55,7 @@ db.once('open', () => console.log('Connected to MongoDB'));
 // Your API endpoints
 app.get('/x2', (req, res) => {
   // Handle request and respond with data
-  res.json({ message: 'Data from MongoDB' });
+  res.json({ message: 'Data from MongoDB!!!!!!!!!!!!!!!!!!' });
 });
 
 // Define Routes
@@ -66,10 +65,23 @@ app.use('/api/invoices', require('./routes/invoices'));
 
 
 
+// Define your route to fetch all customers
+app.get('/api/customers', async (req, res) => {
+  try {
+    const customers = await Customer.find();
+    res.json(customers);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Start the server
-app.listen(5000, () => {
+app.listen(3000, () => {
   console.log('Server running on port 3000');
 });
+
+
+
 ///NYTT ///////////////////////////////////SLUT
 ///NYTT ///////////////////////////////////SLUT
 ///NYTT ///////////////////////////////////SLUT
