@@ -296,7 +296,7 @@ function InvoiceForm() {
 
   <label>
     <input
-      placeholder="Ange Antal"
+      placeholder="Ange Antal222"
       type="text"
       name="antal"
       value={product.antal}
