@@ -21,8 +21,13 @@ function CustomerForm() {
   const handleSubmit = async (e) => {
     e.preventDefault(); // tar bort html 
     try {
+
+       //MED MONGO!!
+     //const response = await axios.get('https://your-backend-url/api/customers');
+     const response = await axios.post('http://localhost:3000/api/customers');
       // Send POST request to API to add new customer using the `customer` state
-      const response = await axios.post('/api/customers', customer);
+      //INNAN MONGO!!!!
+      //const response = await axios.post('/api/customers', customer);
       console.log('Response:', response.data); // Assuming the server responds with the saved customer
       setCustomer({ name: '', email: '', phone: '', hemligt: '' }); // Clear the form after successful submission
      
