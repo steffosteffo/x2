@@ -46,9 +46,10 @@ app.use(cors({
 
 
 
-  origin: ['http://localhost:3000', 'https://steffosteffo.github.io'], // Update with your frontend URLs
+  origin: ['http://localhost:3000', 'https://steffosteffo.github.io', 'http://213.112.61.64:3000'], // Update with your frontend URLs
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true // nytt 
 }));
 
 
