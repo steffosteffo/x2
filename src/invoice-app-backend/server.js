@@ -42,6 +42,9 @@ app.listen(PORT, () => {
 
 
 // Allow requests from specific origin (e.g., GitHub Pages)
+app.use(cors());
+
+/*
 app.use(cors({
 
 
@@ -51,7 +54,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true // nytt 
 }));
-
+*/
 
 const MONGO_URI='mongodb+srv://root:root@books-store-mern.ipulw5t.mongodb.net/steffo?retryWrites=true&w=majority'
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -63,6 +66,8 @@ app.get('/x2', (req, res) => {
   // Handle request and respond with data
   res.json({ message: 'Data from MongoDB!!!!!!!!!!!!!!!!!!' });
 });
+
+
 
 // Define Routes
 app.use('/api/products', require('./routes/products'));
