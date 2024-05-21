@@ -203,13 +203,24 @@ function InvoiceForm() {
   <select value={selectedCustomer} onChange={(e) => handleSelectCustomer(e.target.value)}>
     <option value="">Select a customer</option>
     {customers
-      .slice() // Create a copy of the original array to avoid mutating it
-      .sort((a, b) => a.name.localeCompare(b.name)) // Sort customers alphabetically by name
-      .map((customer) => (
-        <option key={customer._id} value={customer._id}>
-          {customer.name}
-        </option>
-      ))}
+            .slice() // Create a copy of the original array to avoid mutating it
+            .sort((a, b) => {
+              if (a.name && b.name) {
+                return a.name.localeCompare(b.name);
+              } else if (a.name) {
+                return -1;
+              } else if (b.name) {
+                return 1;
+              } else {
+                return 0;
+              }
+            }) // Sort customers alphabetically by name
+            .map((customer) => (
+              <option key={customer._id} value={customer._id}>
+                {customer.name || 'Unnamed Customer'}
+              </option>
+            ))}
+    
   </select>
 </div>
    {/****  
