@@ -18,6 +18,10 @@ Server is running on port 5000
 Connected to MongoDB
 
 
+kan starts denna istället för backend -denna eller backens 
+C:\Dev\invoice-app-frontend\src\invoice-app-backend>pm2 start server.js --name my-app
+
+
 
 
 
