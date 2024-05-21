@@ -37,7 +37,7 @@ app.listen(PORT, () => {
 ///NYTT ///////////////////////////////////START 
 
 
-
+// C:\Dev\invoice-app-frontend\src\invoice-app-backend>pm2 start server.js --name my-app
 
 
 
