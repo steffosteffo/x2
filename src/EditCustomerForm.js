@@ -20,8 +20,8 @@ function EditCustomerForm() {
     try {
      
      //MED MONGO!!
-     const response = await axios.get('https://your-backend-url/api/customers');   // sätt tillbaka för att köra mot 3000
-     // const response = await axios.get('http://localhost:5000/api/customers');
+     // const response = await axios.get('https://your-backend-url/api/customers');   
+      const response = await axios.get('http://localhost:3000/api/customers'); // sätt tillbaka för att köra mot 3000
        ///C:/Dev/invoice-app-frontend/src/invoice-app-backend/routes/customers.js
      // UTAN MONGO!!!
      // const response = await axios.get('/api/customers');
