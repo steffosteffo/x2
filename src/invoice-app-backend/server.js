@@ -43,16 +43,20 @@ app.listen(PORT, () => {
 
 // Allow requests from specific origin (e.g., GitHub Pages)
 const corsOpt = {
-  origin: ['http://localhost:3000','http://213.112.62.2:3000', 'https://steffosteffo.github.io', 'http://213.112.61.64:3000','http://85.119.130.113:5000',
-  'http://213.112.61.37:5000', 'http://213.112.61.37:3000', 
-  'http://213.112.61.144:3000','http://213.112.61.144:5000/api/customers' ,
-  'http://steffohost.hopto.org:3000','http://steffohost.hopto.org:5000', 
-  'http://steffohost.hopto.org:5000/api/customers',
-  'http://steffohost.hopto.org:3000/api/customers',
-  'http://213.112.61.185:3000','http://213.112.61.185:5000/api/customers'], // Update with your frontend URLs
+  origin: [
+
+  //'http://localhost:3000','http://213.112.62.2:3000', 
+  //'https://steffosteffo.github.io', 'http://213.112.61.64:3000','http://85.119.130.113:5000',
+  //'http://213.112.61.37:5000', 'http://213.112.61.37:3000', 
+  //'http://213.112.61.144:3000','http://213.112.61.144:5000/api/customers' ,
+  //'http://steffohost.hopto.org:3000','http://steffohost.hopto.org:5000', 
+  //'http://steffohost.hopto.org:5000/api/customers',
+  //'http://steffohost.hopto.org:3000/api/customers',
+  'http://213.112.62.23:3000',
+  'http://213.112.62.23:5000/api/customers'
+], // Update with your frontend URLs
                                                                                                                                                                     
-                                                                                                    
-  //origin: 'http://213.112.62.28:300',
+ 
   credential: true
 };
 app.use(cors(corsOpt));
