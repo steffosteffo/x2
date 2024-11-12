@@ -106,7 +106,7 @@ app.get('/api/customers', async (req, res) => {
 // Start the server
 //app.listen(3000,'0.0.0.0', () => {   //om jag sätter dit denn 0000 så kommer wéxren daror att kunna ta emot data med curl http://1.1.1:300/api/customrs !!!!!
   const PORT = app.listen(5000,() => {
-  console.log('Server running on port ${PORT}');
+  console.log(`Server running on port ${PORT}`);
 });
 
 
