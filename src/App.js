@@ -16,10 +16,10 @@ function App() {
       <h1>Invoice Management App</h1>
 
       <div>
-        <button onClick={() => handleSelectForm('customer')}>Customer Form</button>
-        <button onClick={() => handleSelectForm('editCustomer')}>Edit Customer Form</button>
-        <button onClick={() => handleSelectForm('Product')}>Product Form</button>
-        <button onClick={() => handleSelectForm('invoice')}>Invoice Form</button>
+        <button onClick={() => handleSelectForm('customer')}>Customer Form1</button>
+        <button onClick={() => handleSelectForm('editCustomer')}>Edit Customer Form2</button>
+        <button onClick={() => handleSelectForm('Product')}>Product Form3</button>
+        <button onClick={() => handleSelectForm('invoice')}>Invoice Form4</button>
       </div>
       
       {selectedForm === 'customer' && <CustomerForm />}
