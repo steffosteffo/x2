@@ -52,8 +52,8 @@ const corsOpt = {
   //'http://steffohost.hopto.org:3000','http://steffohost.hopto.org:5000', 
   'http://steffohost.hopto.org:5000/api/customers',
   'http://steffohost.hopto.org:3000/api/customers',
-  'http://213.112.60.223:3000',
-  'http://213.112.60.223:5000/api/customers'
+  'http://85.227.215.171:3000',
+  'http://85.227.215.171:5000/api/customers'
 ], // Update with your frontend URLs
                                                                                                                                                                     
  
